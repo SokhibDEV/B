@@ -17,7 +17,7 @@ const Home = () => {
     setLoading(true);
 
     axios
-      .get("http://localhost:14259/books")
+      .get("http://localhost:8080/books")
       .then((res) => {
         setBooks(res.data.data), setLoading(false);
       })
